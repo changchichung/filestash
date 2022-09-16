@@ -1,3 +1,7 @@
+my version to install filestash in ubuntu 20.04/22.04
+
+
+
 ![screenshot](https://raw.githubusercontent.com/mickael-kerjean/filestash_images/master/.assets/photo.jpg)
 
 <p align="center">
