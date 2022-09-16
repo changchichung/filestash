@@ -61,12 +61,12 @@ sudo apt install axel wget curl -y
 axel -n 10 https://downloads.filestash.app/latest/filestash_Linux-x86_64.tar.gpg
 gpg filestash_Linux-x86_64.tar.gpg
 tar xf filestash_Linux-x86_64.tar
-sudo mkdir -p /app && mv filestash /app/
+sudo mkdir -p /app && sudo mv filestash /app/
 #apt-get purge -y --auto-remove gnupg
 
-apt-get install -y curl tor emacs-nox ffmpeg zip poppler-utils > /dev/null
-curl https://raw.githubusercontent.com/mickael-kerjean/filestash/master/server/.assets/emacs/htmlize.el > /usr/share/emacs/site-lisp/htmlize.el
-curl https://raw.githubusercontent.com/mickael-kerjean/filestash/master/server/.assets/emacs/ox-gfm.el > /usr/share/emacs/site-lisp/ox-gfm.el
+sudo apt-get install -y curl tor emacs-nox ffmpeg zip poppler-utils > /dev/null
+sudo curl https://raw.githubusercontent.com/mickael-kerjean/filestash/master/server/.assets/emacs/htmlize.el > /usr/share/emacs/site-lisp/htmlize.el
+sudo curl https://raw.githubusercontent.com/mickael-kerjean/filestash/master/server/.assets/emacs/ox-gfm.el > /usr/share/emacs/site-lisp/ox-gfm.el
 
 cd && sudo apt-get install -y wget perl > /dev/null
 export CTAN_REPO="http://mirror.las.iastate.edu/tex-archive/systems/texlive/tlnet"
@@ -86,7 +86,7 @@ mv ~/.TinyTeX /usr/share/tinytex
 /usr/share/tinytex/bin/x86_64-linux/tlmgr install capt-of
 /usr/share/tinytex/bin/x86_64-linux/tlmgr install epstopdf-pkg
 /usr/share/tinytex/bin/x86_64-linux/tlmgr install cm-super
-ln -s /usr/share/tinytex/bin/x86_64-linux/pdflatex /usr/local/bin/pdflatex
+sudo ln -s /usr/share/tinytex/bin/x86_64-linux/pdflatex /usr/local/bin/pdflatex
 
 #apt-get purge -y --auto-remove perl wget
 
